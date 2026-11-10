@@ -64,7 +64,9 @@ Os casos são cenários didáticos. Escolha **pelo menos cinco** e justifique su
 
 ## 4. Raciocínio crítico
 
-“Detectar fraude” define sozinho o tipo de aprendizado? Compare o uso de exemplos rotulados e a busca de operações atípicas sem rótulos. **Não. Detectar fraude não define sozinho o tipo de aprendizado, pois isso depende da maneira como os dados são utilizados.
+“Detectar fraude” define sozinho o tipo de aprendizado? Compare o uso de exemplos rotulados e a busca de operações atípicas sem rótulos. 
+
+**Não. Detectar fraude não define sozinho o tipo de aprendizado, pois isso depende da maneira como os dados são utilizados.
 
 Quando temos exemplos anteriores de operações que já foram identificadas como fraudulentas ou legítimas, podemos utilizar o aprendizado supervisionado de classificação. Nesse caso, o modelo aprende com os resultados conhecidos e tenta identificar novas fraudes.
 

@@ -51,15 +51,15 @@ Uma biblioteca universitária enfrenta filas em horários específicos e baixa u
 
 | Integrante | Papel | Contribuição |
 | --- | --- | --- |
-| PREENCHER | PREENCHER | PREENCHER |
+| João Victor Alves Silva | Pesquisador e responsável pelo projeto | Realizou a análise do problema, definiu as perguntas de negócio, identificou os dados necessários e propôs soluções para melhorar o atendimento da biblioteca. |
 
 ## Conclusão da equipe
 
-**Proposta:** PREENCHER
+**Proposta:** Nossa proposta é utilizar os dados de atendimento da biblioteca para identificar os horários de maior movimento e os serviços menos utilizados. Com essas informações, a gestão poderá organizar melhor os funcionários, reduzir o tempo de espera e criar ações para incentivar os estudantes a utilizarem os serviços disponíveis. Inicialmente, a análise será feita por meio de gráficos e tabelas, podendo utilizar técnicas de Machine Learning futuramente, caso seja necessário.
 
-**Dúvida ainda aberta:** PREENCHER
+**Dúvida ainda aberta:** Uma dúvida que ainda precisamos investigar é quais fatores fazem alguns serviços da biblioteca serem pouco utilizados. Também precisamos entender se a baixa procura acontece por falta de interesse dos estudantes ou por falta de divulgação desses serviços.
 
-**Feedback recebido e melhoria realizada:** PREENCHER
+**Feedback recebido e melhoria realizada:** Como melhoria da proposta, foi considerado que não basta apenas diminuir as filas. Também é importante entender a utilização dos serviços e melhorar a experiência dos estudantes. Por isso, a proposta passou a considerar tanto a organização dos atendimentos quanto o incentivo à utilização dos serviços menos procurados.
 
 ## Entrega
 

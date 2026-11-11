@@ -22,28 +22,38 @@ Use o [notebook de apoio](notebooks/laboratorio.ipynb) ou o [CSV sintético](dad
 
 | Item | Registro |
 | --- | --- |
-| Ambiente e data | PREENCHER |
-| Versões das ferramentas/bibliotecas | PREENCHER |
-| Semente aleatória | PREENCHER |
-| Caminho do notebook executado ou fluxo Orange | PREENCHER |
-| Origem dos dados e condição sintética | PREENCHER |
+| Ambiente e data | Google Colab ou Jupyter Notebook, utilizando Python. Data: 10/11/2026. Ambiente efetivamente utilizado: confirmar após execução. |
+| Versões das ferramentas/bibliotecas | A registrar após executar o notebook. Devem ser informadas as versões do Python, pandas, scikit-learn, NumPy e Matplotlib, caso utilizadas. |
+| Semente aleatória | A confirmar no código do notebook. Não presumir um valor. |
+| Caminho do notebook executado ou fluxo Orange | notebooks/laboratorio-equipe.ipynb (caminho previsto para salvar a execução). |
+| Origem dos dados e condição sintética | Arquivo dados/educacionais-sinteticos.csv, disponibilizado para a atividade. São 600 registros fictícios, sem validade empírica sobre estudantes reais. |
 
 ## 2. Problema e preparação
 
-- Pergunta de negócio: **PREENCHER**
-- Unidade de análise e horizonte: **PREENCHER**
-- Atributos disponíveis no instante da previsão: **PREENCHER**
-- Variável-alvo e sua natureza: **PREENCHER**
-- Ausências e outros problemas encontrados: **PREENCHER**
-- Tratamentos e conjunto usado para aprendê-los: **PREENCHER**
+- Pergunta de negócio: **É possível utilizar informações de frequência, notas e entrega de atividades para identificar estudantes com maior possibilidade de evasão ao final do semestre?**
+- Unidade de análise e horizonte: **Cada registro representa um estudante fictício. A previsão considera informações referentes às primeiras quatro semanas do semestre, buscando identificar a situação do estudante ao final do semestre.**
+- Atributos disponíveis no instante da previsão: **frequencia_sem4: frequência do estudante nas primeiras quatro semanas.
+nota_sem4: nota obtida no período.
+entregas_sem4: quantidade de atividades entregues.**
+- Variável-alvo e sua natureza: **A variável-alvo é evasao_fim_semestre, que representa a situação do estudante ao final do semestre.
+- 0 = permaneceu.
+- 1 = evadiu.
+É uma variável categórica binária, portanto, trata-se de um problema de classificação supervisionada.**
+- Ausências e outros problemas encontrados: **A existência de valores ausentes, registros duplicados ou informações inconsistentes deverá ser verificada durante a análise do CSV. Não devemos afirmar que existem ou não existem problemas sem conferir os dados.**
+- Tratamentos e conjunto usado para aprendê-los: **Primeiramente, será feita uma inspeção dos dados para verificar valores ausentes e inconsistências. Caso seja necessário realizar algum tratamento, os parâmetros serão definidos utilizando somente os dados de treinamento, evitando que informações do teste influenciem o aprendizado.**
 
 ## 3. Desenvolvimento e teste
 
-- Método de divisão e justificativa: **PREENCHER**
-- Quantidades de treino e teste: **PREENCHER**
-- Procedimento de validação no treino: **PREENCHER**
-- Parâmetros da árvore e como foram escolhidos: **PREENCHER**
-- Como o teste ficou fora da seleção: **PREENCHER**
+- Método de divisão e justificativa: **Método de divisão e justificativa:
+
+A proposta é dividir os dados em 80% para treinamento e 20% para teste, utilizando divisão estratificada para manter uma proporção semelhante das classes nos dois conjuntos.**
+- Quantidades de treino e teste: **Considerando os 600 registros:
+- Treinamento: 480 registros.
+- Teste: 120 registros.
+Essas quantidades correspondem à divisão planejada e precisam ser confirmadas na execução.**
+- Procedimento de validação no treino: **A proposta é utilizar validação cruzada estratificada com cinco partes (5-fold). Dessa maneira, o modelo será avaliado em diferentes divisões do treinamento, permitindo comparar seu desempenho com mais segurança.**
+- Parâmetros da árvore e como foram escolhidos: **Será utilizada uma árvore de decisão, inicialmente com parâmetros padrão. Depois, serão testadas alterações na profundidade máxima da árvore e na quantidade mínima de registros por folha, buscando encontrar um equilíbrio entre aprendizado e capacidade de generalização.**
+- Como o teste ficou fora da seleção: **O conjunto de teste será separado antes da escolha dos parâmetros e utilizado somente na avaliação final. Assim, os resultados do teste não influenciarão a escolha do melhor modelo.**
 
 ### Alternativa Orange
 

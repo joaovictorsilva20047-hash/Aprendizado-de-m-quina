@@ -7,14 +7,13 @@ Ciência de Dados e Aprendizado de Máquina · Sistemas de Informação · 2026.
 
 ## Identificação
 
-- Estudante ou equipe: **PREENCHER**
-- Turma: **PREENCHER**
-- Data de realização: **PREENCHER**
-- Integrantes e contribuições (se em equipe): **PREENCHER**
-
+- Estudante ou equipe: **João Victor Alves Silva**
+- Turma: **Lab 05**
+- Data de realização: **10/11/2026**
+- Integrantes e contribuições (se em equipe): **individual**
 ## Percurso escolhido
 
-- [ ] Python/Colab ou Jupyter.
+- [x] Python/Colab ou Jupyter.
 - [ ] Orange Data Mining.
 
 Use o [notebook de apoio](notebooks/laboratorio.ipynb) ou o [CSV sintético](dados/educacionais-sinteticos.csv). O CSV contém 600 registros fictícios. Atributos: `frequencia_sem4`, `nota_sem4`, `entregas_sem4`. Alvo: `evasao_fim_semestre` (0 permaneceu, 1 evadiu). As associações foram definidas pela simulação, sem validade empírica sobre estudantes reais.
